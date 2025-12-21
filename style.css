@@ -1,0 +1,80 @@
+:root {
+    --bg-dark: #0d1117; /* Gris foncé GitHub */
+    --accent: #2ea043;  /* Vert GitHub */
+    --text: #c9d1d9;
+    --card-bg: #161b22;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text);
+    font-family: 'Consolas', 'Monaco', monospace;
+    display: flex;
+    margin: 0;
+}
+
+/* Menu latéral pour un look pro */
+.side-nav {
+    width: 250px;
+    height: 100vh;
+    background: #010409;
+    position: fixed;
+    border-right: 1px solid #30363d;
+    padding: 20px;
+}
+
+.side-nav ul { list-style: none; padding-top: 50px; }
+.side-nav ul li a {
+    color: var(--text);
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+    transition: 0.3s;
+}
+
+.side-nav ul li a:hover { color: var(--accent); transform: translateX(5px); }
+
+/* Contenu Principal */
+.content { margin-left: 250px; padding: 40px; width: 100%; }
+
+.terminal-header {
+    background: #161b22;
+    padding: 20px;
+    border-radius: 6px;
+    border: 1px solid #30363d;
+    margin-bottom: 40px;
+}
+
+.terminal-dots span {
+    height: 12px; width: 12px; display: inline-block;
+    border-radius: 50%; margin-right: 8px;
+}
+.terminal-dots span:nth-child(1) { background: #ff5f56; }
+.terminal-dots span:nth-child(2) { background: #ffbd2e; }
+.terminal-dots span:nth-child(3) { background: #27c93f; }
+
+/* Grille de projets */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background: var(--card-bg);
+    border: 1px solid #30363d;
+    padding: 20px;
+    border-radius: 8px;
+    transition: border-color 0.3s;
+}
+
+.project-card:hover { border-color: var(--accent); }
+
+.tag {
+    background: #21262d;
+    color: var(--accent);
+    padding: 3px 8px;
+    font-size: 0.7rem;
+    border-radius: 4px;
+    border: 1px solid var(--accent);
+}
