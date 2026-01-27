@@ -1,6 +1,6 @@
 :root {
-    --bg-dark: #0d1117; /* Gris foncé GitHub */
-    --accent: #2ea043;  /* Vert GitHub */
+    --bg-dark: #0d1117; 
+    --accent: #2ea043;  
     --text: #c9d1d9;
     --card-bg: #161b22;
 }
@@ -13,14 +13,17 @@ body {
     margin: 0;
 }
 
-/* Menu latéral pour un look pro */
 .side-nav {
     width: 250px;
     height: 100vh;
     background: #010409;
     position: fixed;
+    left: -200px; 
+    top: 0;
     border-right: 1px solid #30363d;
     padding: 20px;
+    transition: left 0.4s ease-in-out; 
+    z-index: 1000;
 }
 
 .side-nav ul { list-style: none; padding-top: 50px; }
@@ -32,10 +35,18 @@ body {
     transition: 0.3s;
 }
 
+.side-nav:hover {
+    left: 0;
+}
+
 .side-nav ul li a:hover { color: var(--accent); transform: translateX(5px); }
 
-/* Contenu Principal */
-.content { margin-left: 250px; padding: 40px; width: 100%; }
+.content { 
+    margin-left: 60px;
+    padding: 40px; 
+    width: calc(100% - 60px); 
+    transition: margin-left 0.4s ease-in-out;
+}
 
 .terminal-header {
     background: #161b22;
@@ -53,7 +64,6 @@ body {
 .terminal-dots span:nth-child(2) { background: #ffbd2e; }
 .terminal-dots span:nth-child(3) { background: #27c93f; }
 
-/* Grille de projets */
 .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
