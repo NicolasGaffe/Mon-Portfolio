@@ -127,3 +127,11 @@ body {
 .form-group label span {
     color: var(--accent);
 }
+.terminal-footer {
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid #30363d; /* Même bordure que tes cartes */
+    text-align: center;
+    font-size: 0.9rem;
+    opacity: 0.6; /* Un peu plus discret pour le copyright */
+}
