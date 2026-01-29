@@ -89,7 +89,6 @@ body {
     border: 1px solid var(--accent);
 }
 
-/* Style du formulaire de contact */
 #contact textarea {
     width: 100%;
     background: #0d1117;
@@ -130,8 +129,8 @@ body {
 .terminal-footer {
     margin-top: 50px;
     padding-top: 20px;
-    border-top: 1px solid #30363d; /* Même bordure que tes cartes */
+    border-top: 1px solid #30363d;
     text-align: center;
     font-size: 0.9rem;
-    opacity: 0.6; /* Un peu plus discret pour le copyright */
+    opacity: 0.6; 
 }
