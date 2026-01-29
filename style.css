@@ -17,6 +17,14 @@ body::before {
     pointer-events: none;
 }
 
+body {
+    background-color: var(--bg-dark);
+    color: var(--text);
+    font-family: 'Consolas', 'Monaco', monospace;
+    display: flex;
+    margin: 0;
+}
+
 .side-nav {
     width: 250px;
     height: 100vh;
