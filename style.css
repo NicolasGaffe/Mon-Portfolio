@@ -43,7 +43,7 @@ body::before {
 
 .side-nav ul { list-style: none; padding-top: 50px; }
 
-.side-nav ul li a {.side-nav ul li a:hover { color: var(--accent); transform: translateX(5px);
+.side-nav ul li a {
     color: var(--text);
     text-decoration: none;
     display: block;
