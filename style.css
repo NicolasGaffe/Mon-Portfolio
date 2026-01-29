@@ -30,7 +30,7 @@ body::before {
     width: 250px;
     height: 100vh;
     position: fixed;
-    left: -247px; 
+    left: -250px; 
     top: 0;
     border-right: 2px solid var(--accent);
     padding: 20px;
