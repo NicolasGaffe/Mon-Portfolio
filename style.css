@@ -20,12 +20,10 @@ body::before {
     top: 0; left: 0; bottom: 0; right: 0;
     background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), 
                 linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
-    z-index: 9999;
+    z-index: 1;
     background-size: 100% 4px, 3px 100%;
     pointer-events: none;
 }
-
-
 
 .side-nav {
     width: 250px;
@@ -44,6 +42,7 @@ body::before {
 }
 
 .side-nav ul { list-style: none; padding-top: 50px; }
+
 .side-nav ul li a {.side-nav ul li a:hover { color: var(--accent); transform: translateX(5px);
     color: var(--text);
     text-decoration: none;
@@ -52,8 +51,9 @@ body::before {
     transition: 0.3s;
 }
 
-.side-nav:hover {
-    left: 0;
+.side-nav ul li a:hover { 
+    color: var(--accent); 
+    transform: translateX(5px); 
 }
 
 .content { 
