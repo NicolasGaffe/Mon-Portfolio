@@ -90,7 +90,7 @@ body {
 }
 
 #contact textarea {
-    width: 90%;
+    width: 60%;
     background: #0d1117;
     border: 1px solid #30363d;
     color: var(--text);
