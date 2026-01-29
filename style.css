@@ -25,12 +25,12 @@ body {
     transition: left 0.4s ease-in-out; 
     z-index: 1000;
     background: rgba(1, 4, 9, 0.8) !important;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(20px);
     border-right: 1px solid var(--accent);
 }
 
 .side-nav ul { list-style: none; padding-top: 50px; }
-.side-nav ul li a {
+.side-nav ul li a {.side-nav ul li a:hover { color: var(--accent); transform: translateX(5px);
     color: var(--text);
     text-decoration: none;
     display: block;
@@ -41,8 +41,6 @@ body {
 .side-nav:hover {
     left: 0;
 }
-
-.side-nav ul li a:hover { color: var(--accent); transform: translateX(5px); }
 
 .content { 
     margin-left: 60px;
