@@ -30,15 +30,14 @@ body::before {
     height: 100vh;
     background: #010409;
     position: fixed;
-    left: -250px; 
+    left: -245px; 
     top: 0;
-    border-right: 1px solid #30363d;
+    border-right: 2px solid var(--accent);
     padding: 20px;
     transition: left 0.4s ease-in-out; 
     z-index: 1000;
     background: rgba(1, 4, 9, 0.8) !important;
     backdrop-filter: blur(20px);
-    border-right: 1px solid var(--accent);
 }
 
 .side-nav ul { list-style: none; padding-top: 50px; }
