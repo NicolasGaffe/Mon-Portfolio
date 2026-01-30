@@ -31,11 +31,11 @@
         <section id="contact">
             <h2><i class="fas fa-terminal"></i> Contact</h2>
             <div class="project-card"> 
-                <form method="post" action="submit.php">
-                    <div class="form-group">
-                        <label for="message" style="display: block; margin-bottom: 15px;">
-                            Nicolas Gaffé - Messagerie <span>tapez votre message...</span></label>
-                        <textarea id="message" name="content" rows="10" placeholder="Votre message ici..." required></textarea>
+                <form action="https://formspree.io/f/xvzrbywr"method="post" style="display: flex; flex-direction: column; align-items: center;">>
+                    <div class="form-group" style="width: 100%; text-align: center;">
+                        <label for="message" style="display: block; margin-bottom: 10px;">tapez votre message...</label>
+                        <textarea id="message" name="message" rows="10" placeholder="Votre message ici..." required
+                            style="width:80%; max-width: 600px; margin: 0 auto;"></textarea>
                     </div>
                     
                     <button type="submit" class="btn-submit">Envoyer le message</button>
