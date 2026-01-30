@@ -57,11 +57,11 @@ body {
 
 .project-card {
     background-color: var(--card-bg);
-    padding: 25px;
+    padding: 40px;
     border-radius: 8px;
     border: 1px solid #30363d;
-    width: 95%;
-    max-width: 1000px;
+    width: 90%;
+    max-width: 900px;
     margin: 20px auto;
     transition: 0.3s;
 }
@@ -123,8 +123,18 @@ body {
 
 .form-group input:focus, 
 .form-group textarea:focus {
-    border-color: var(--accent);
-    box-shadow: 0 0 8px rgba(46, 160, 67, 0.3);
+width: 100% !important; 
+    box-sizing: border-box;
+    background-color: var(--bg-dark);
+    color: var(--text);
+    border: 1px solid #30363d;
+    padding: 15px;
+    font-family: 'Consolas', monospace;
+}
+
+.form-group textarea {
+    min-height: 150px; 
+    resize: vertical;
 }
 
 .btn-submit {
@@ -143,4 +153,9 @@ body {
     background-color: var(--accent);
     color: var(--bg-dark);
     box-shadow: 0 0 15px rgba(46, 160, 67, 0.5);
+}
+
+.form-group {
+    width: 100%;
+    margin-bottom: 25px;
 }
