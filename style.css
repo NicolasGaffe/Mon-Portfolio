@@ -106,3 +106,41 @@ body {
     border-top: 1px solid #30363d;
     text-align: center;
 }
+
+.form-group input, 
+.form-group textarea {
+    background-color: var(--bg-dark) !important;
+    color: var(--text);
+    border: 1px solid #30363d;
+    border-radius: 6px;
+    font-family: 'Consolas', 'Monaco', monospace;
+    padding: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-group input:focus, 
+.form-group textarea:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 8px rgba(46, 160, 67, 0.3);
+}
+
+.btn-submit {
+    background-color: transparent;
+    color: var(--accent);
+    border: 1px solid var(--accent);
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.btn-submit:hover {
+    background-color: var(--accent);
+    color: var(--bg-dark);
+    box-shadow: 0 0 15px rgba(46, 160, 67, 0.5);
+}
