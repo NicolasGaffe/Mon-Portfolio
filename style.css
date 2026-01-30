@@ -18,14 +18,13 @@ body {
     width: 250px;
     height: 100vh;
     position: fixed;
-    left: -250px; 
+    left: -247px; 
     top: 0;
     border-right: 2px solid var(--accent);
     padding: 20px;
     transition: left 0.4s cubic-bezier(0.4, 0, 0.2, 1); 
     z-index: 3000;
-    background: rgba(1, 4, 9, 0.9) !important;
-    backdrop-filter: blur(20px);
+    background: rgba(1, 4, 9, 0.95) !important; 
 }
 
 .side-nav:hover {
