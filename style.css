@@ -158,6 +158,24 @@ width: 100% !important;
     box-shadow: 0 0 15px rgba(46, 160, 67, 0.5);
 }
 
+.menu-trigger {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background: var(--card-bg);
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 2000;
+    font-size: 0.9rem;
+}
+
+.side-nav:hover ~ .content .menu-trigger {
+    display: none;
+}
+
 .form-group {
     width: 100%;
     margin-bottom: 25px;
