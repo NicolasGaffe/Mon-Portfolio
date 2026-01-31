@@ -9,7 +9,7 @@
 </head>
 <body>
     <nav class="side-nav">
-        <div class="nav-header">Nicolas Gaffé</div>
+        <div class="menu-trigger"><i class="fas fa-bars"></i> Menu</div>
         <ul>
             <li><a href="index.html"><i class="fas fa-home"></i> Accueil</a></li>
             <li><a href="#projets"><i class="fas fa-folder"></i> Parcours Professionel</a></li>
@@ -21,7 +21,6 @@
     <main class="content">
         <header class="terminal-header">
             <div class="terminal-dots">
-                <span></span><span></span><span></span>
             </div>
             <h1> Nicolas Gaffé - Messagerie <span class="typing">Formulaire de contact</span></h1>
         </header>
@@ -58,5 +57,17 @@
             <p>&copy; 2026 Nicolas Gaffé - Tous droits réservés</p>
         </footer>
     </main>
+        <script>
+    const nav = document.querySelector('.side-nav');
+    const trigger = document.querySelector('.menu-trigger');
+    trigger.addEventListener('click', () => {
+        nav.classList.toggle('active');
+    });
+    document.addEventListener('click', (e) => {
+        if (!nav.contains(e.target) && nav.classList.contains('active')) {
+            nav.classList.remove('active');
+        }
+    });
+    </script>
 </body>
 </html>
