@@ -1,7 +1,7 @@
 :root {
     --bg-dark: #0d1117; 
     --accent: #58a6ff;  
-    --text: #cd9d1d9;
+    --text: #ffffff;
     --card-bg: #161b22;
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -31,10 +31,6 @@ body {
 
 .side-nav.active {
     left: 0;
-}
-
-.side-nav:hover {
-    left: initial;
 }
 
 .side-nav ul { list-style: none; padding-top: 50px; }
@@ -176,10 +172,6 @@ width: 100% !important;
 .menu-trigger:hover {
     background: var(--accent);
     color: var(--bg-dark);
-}
-
-.side-nav:hover ~ .content .menu-trigger {
-    display: none;
 }
 
 .form-group {
