@@ -175,9 +175,9 @@ width: 100% !important;
 }
 
 h2, .content h2 {
-    color: var(--text); /* Utilise le blanc défini dans tes variables */
+    color: var(--text);
     margin-bottom: 20px;
-    text-shadow: 0 0 5px rgba(88, 166, 255, 0.3); /* Optionnel : une légère lueur bleue */
+    text-shadow: 0 0 5px rgba(88, 166, 255, 0.3);
 }
 .form-group {
     width: 100%;
