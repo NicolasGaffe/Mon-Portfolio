@@ -1,8 +1,8 @@
 :root {
     --bg-dark: #0d1117; 
-    --accent: #2ea043;  
-    --text: #c9d1d9;
-    --card-bg: #161b22;
+    --accent: #161b22;  
+    --text: #58a6ff;
+    --card-bg: #c9d1d9;
 }
 
 body {
