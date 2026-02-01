@@ -16,6 +16,11 @@ body {
     overflow-x: hidden;
 }
 
+.project-card {
+    text-align: left;
+    padding-left: 40px;
+}
+
 .side-nav {
     width: 250px;
     height: 100vh;
