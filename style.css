@@ -17,8 +17,30 @@ body {
 }
 
 .project-card {
+    background-color: var(--card-bg);
+    color: var(--text)
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #30363d;
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    position: relative;
     text-align: left;
     padding-left: 40px;
+    margin-bottom: 50px;
+}
+
+.project-card:not(:last-child)::after {
+    content: "↓"; /
+    position: absolute;
+    bottom: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2rem;
+    color: var(--accent);
+    text-shadow: 0 0 8px var(--accent);
+    opacity: 0.6;
 }
 
 .side-nav {
@@ -62,16 +84,7 @@ body {
     align-items: center;
 }
 
-.project-card {
-    background-color: var(--card-bg);
-    color: var(--text)
-    padding: 30px;
-    border-radius: 8px;
-    border: 1px solid #30363d;
-    width: 90%;
-    max-width: 800px;
-    margin: 20px auto;
-}
+
 
 .hero-section {
     display: flex;
