@@ -18,7 +18,7 @@ body {
 
 .project-card {
     background-color: var(--card-bg);
-    color: var(--text)
+    color: var(--text);
     padding: 30px;
     border-radius: 8px;
     border: 1px solid #30363d;
