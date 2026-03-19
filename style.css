@@ -31,18 +31,6 @@ body {
     margin-bottom: 60px;
 }
 
-.project-card:not(:last-child)::after {
-    content: "↑";
-    position: absolute;
-    bottom: -45px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 2rem;
-    color: var(--accent);
-    text-shadow: 0 0 8px var(--accent);
-    opacity: 0.6;
-}
-
 .side-nav {
     width: 250px;
     height: 100vh;
