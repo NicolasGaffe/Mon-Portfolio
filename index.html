@@ -2,73 +2,167 @@
 <html lang="fr">
 <head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HX6PJN2BF0"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-HX6PJN2BF0');
-</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HX6PJN2BF0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-HX6PJN2BF0');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nicolas Gaffé | Portfolio </title>
+    <title>Nicolas Gaffé | Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
-    <nav class="side-nav">
-        <div class="menu-trigger"><i class="fas fa-bars"></i> Menu</div>
-        <ul>
+    <!-- NAV BARRE FIXE -->
+    <nav class="top-nav">
+        <div class="nav-logo">ng<span class="logo-dot">.</span>dev</div>
+        <button class="menu-trigger" aria-label="Ouvrir le menu">
+            <i class="fas fa-bars"></i> Menu
+        </button>
+        <ul class="nav-links">
             <li><a href="index.html"><i class="fas fa-home"></i> Accueil</a></li>
-            <li><a href="parcours.html"><i class="fas fa-folder"></i> Parcours Professionel</a></li>
+            <li><a href="parcours.html"><i class="fas fa-folder"></i> Parcours</a></li>
             <li><a href="competences.html"><i class="fas fa-list-check"></i> Compétences</a></li>
-            <li><a href="epreuve.html"><i class="fas fa-graduation-cap"></i> Epreuve</a></li>
+            <li><a href="epreuve.html"><i class="fas fa-graduation-cap"></i> Épreuve</a></li>
             <li><a href="contact.html"><i class="fas fa-terminal"></i> Contact</a></li>
         </ul>
     </nav>
 
+    <!-- MENU MOBILE OVERLAY -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="index.html"><i class="fas fa-home"></i> Accueil</a></li>
+            <li><a href="parcours.html"><i class="fas fa-folder"></i> Parcours</a></li>
+            <li><a href="competences.html"><i class="fas fa-list-check"></i> Compétences</a></li>
+            <li><a href="epreuve.html"><i class="fas fa-graduation-cap"></i> Épreuve</a></li>
+            <li><a href="contact.html"><i class="fas fa-terminal"></i> Contact</a></li>
+        </ul>
+    </div>
+
     <main class="content">
-       <section class="hero-section">
-        <div class="hero-content">
-            <img src="sans titre-DSC01873-22.jpg" alt="Photo de Nicolas Gaffé" class="hero-gif">
-            
-            <h1>Nicolas Gaffé</h1>
-            <p class="hero-subtitle">BTS SIO Alternance</p>
+
+        <!-- HERO -->
+        <section class="hero-section">
+            <div class="hero-glow"></div>
+            <div class="hero-content">
+                <div class="hero-avatar">
+                    <img src="sans titre-DSC01873-22.jpg" alt="Photo de Nicolas Gaffé" class="hero-img">
+                    <span class="status-dot" title="Disponible en alternance"></span>
+                </div>
+                <h1 class="hero-name">Nicolas <span class="accent">Gaffé</span></h1>
+                <p class="hero-role">
+                    <span>Étudiant BTS SIO</span>
+                    <span class="sep">|</span>
+                    <span>Alternance</span>
+                    <span class="sep">|</span>
+                    <span>Développement</span>
+                </p>
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    Disponible en alternance
+                </div>
+                <div class="hero-actions">
+                    <a href="parcours.html" class="btn-primary">Voir mon parcours <i class="fas fa-arrow-right"></i></a>
+                    <a href="contact.html" class="btn-outline">Me contacter</a>
+                </div>
             </div>
         </section>
 
-         <section id="home-intro">
-            <h2> À propos de moi </h2>
-            <div class="project-card">
-                <p> Bienvenue sur mon portfolio !</p>
-                <p> Explorez le détail de mon parcours et de mes créations.</p>
-                <p> Utilise le menu à gauche pour explorer mon parcours et mes compétences techniques.</p>
-                <span class="tag"> Ma Formation BTS SIO a lieu de Septembre 2025 à Août 2027</span>
+        <!-- STATS -->
+        <section class="stats-section">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <span class="stat-number">2</span>
+                    <span class="stat-label">ans de formation</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">SIO</span>
+                    <span class="stat-label">BTS spécialité</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">2027</span>
+                    <span class="stat-label">diplôme prévu</span>
+                </div>
             </div>
         </section>
-    
-        <footer class="terminal-footer">
-                <div class="social-links">
-            <a href="https://www.linkedin.com/in/nicolas-gaffé-66713829b" target="_blank" style="color: var(--text); text-decoration: none; font-size: 1.5rem; transition: 0.3s;">
-                <i class="fab fa-linkedin"></i>
-            </a>
+
+        <!-- À PROPOS -->
+        <section id="home-intro" class="about-section">
+            <div class="section-label">// à propos</div>
+            <h2>Bienvenue sur mon portfolio</h2>
+
+            <div class="about-card">
+                <p>Étudiant en BTS SIO en alternance, je me forme aux métiers du développement et de l'informatique. Ce portfolio retrace mon parcours, mes compétences techniques et mes projets réalisés.</p>
+                <p>Utilisez le menu pour explorer mes réalisations et prendre contact.</p>
+                <div class="tags">
+                    <span class="tag tag-accent">BTS SIO</span>
+                    <span class="tag tag-accent">Alternance</span>
+                    <span class="tag tag-green">Sept. 2025 – Août 2027</span>
+                    <span class="tag">Développement web</span>
+                    <span class="tag">Réseaux &amp; sécurité</span>
                 </div>
-            <p>&copy; 2026 Nicolas Gaffé - Tous droits réservés</p>
+            </div>
+
+            <!-- TIMELINE -->
+            <div class="section-label" style="margin-top: 40px;">// parcours</div>
+            <div class="timeline">
+                <div class="tl-item">
+                    <div class="tl-dot active"></div>
+                    <div class="tl-content">
+                        <div class="tl-date">Septembre 2025</div>
+                        <div class="tl-title">Début du BTS SIO en alternance</div>
+                        <div class="tl-sub">Formation de 2 ans — informatique &amp; réseaux</div>
+                    </div>
+                </div>
+                <div class="tl-item">
+                    <div class="tl-dot"></div>
+                    <div class="tl-content">
+                        <div class="tl-date">Août 2027</div>
+                        <div class="tl-title">Obtention du diplôme</div>
+                        <div class="tl-sub">Objectif en cours</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="terminal-footer">
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/nicolas-gaffé-66713829b" target="_blank" aria-label="LinkedIn" title="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+            <p>&copy; 2026 Nicolas Gaffé — Tous droits réservés</p>
         </footer>
+
     </main>
+
     <script>
-    const nav = document.querySelector('.side-nav');
-    const trigger = document.querySelector('.menu-trigger');
-    trigger.addEventListener('click', () => {
-        nav.classList.toggle('active');
-    });
-    document.addEventListener('click', (e) => {
-        if (!nav.contains(e.target) && nav.classList.contains('active')) {
-            nav.classList.remove('active');
-        }
-    });
+        const trigger = document.querySelector('.menu-trigger');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        trigger.addEventListener('click', (e) => {
+            e.stopPropagation();
+            mobileMenu.classList.toggle('active');
+            trigger.classList.toggle('open');
+        });
+
+        document.addEventListener('click', (e) => {
+            if (!mobileMenu.contains(e.target) && !trigger.contains(e.target)) {
+                mobileMenu.classList.remove('active');
+                trigger.classList.remove('open');
+            }
+        });
+
+        // Animation d'entrée au chargement
+        document.querySelectorAll('.hero-content > *').forEach((el, i) => {
+            el.style.animationDelay = `${i * 0.1}s`;
+            el.classList.add('fade-in');
+        });
     </script>
 </body>
 </html>
