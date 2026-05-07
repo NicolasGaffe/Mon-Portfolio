@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compétences | Nicolas Gaffé</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="top-nav">
+        <div class="nav-logo">ng<span class="logo-dot">.</span>dev</div>
+        <button class="menu-trigger" aria-label="Ouvrir le menu">
+            <i class="fas fa-bars"></i> Menu
+        </button>
+        <ul class="nav-links">
+            <li><a href="index.html"><i class="fas fa-home"></i> Accueil</a></li>
+            <li><a href="parcours.html"><i class="fas fa-folder"></i> Parcours</a></li>
+            <li><a href="competences.html" class="active"><i class="fas fa-list-check"></i> Compétences</a></li>
+            <li><a href="epreuve.html"><i class="fas fa-graduation-cap"></i> Épreuve</a></li>
+            <li><a href="contact.html"><i class="fas fa-terminal"></i> Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="index.html"><i class="fas fa-home"></i> Accueil</a></li>
+            <li><a href="parcours.html"><i class="fas fa-folder"></i> Parcours</a></li>
+            <li><a href="competences.html"><i class="fas fa-list-check"></i> Compétences</a></li>
+            <li><a href="epreuve.html"><i class="fas fa-graduation-cap"></i> Épreuve</a></li>
+            <li><a href="contact.html"><i class="fas fa-terminal"></i> Contact</a></li>
+        </ul>
+    </div>
+
+    <main class="content">
+
+        <section class="hero-section" style="padding-bottom: 32px;">
+            <div class="hero-glow"></div>
+            <div class="hero-content">
+                <h1 class="hero-name" style="font-size:2.2rem;">Mes <span class="accent">Compétences</span></h1>
+                <p class="hero-role">
+                    <span>BTS SIO</span>
+                    <span class="sep">|</span>
+                    <span>Sécurité</span>
+                    <span class="sep">|</span>
+                    <span>Développement</span>
+                </p>
+            </div>
+        </section>
+
+        <section class="about-section" style="padding-top: 0;">
+            <div class="section-label">// compétences techniques</div>
+            <h2>Domaines de compétences</h2>
+
+            <div class="about-card skill-card fade-in" style="animation-delay:0.1s">
+                <div class="skill-header">
+                    <div class="skill-icon"><i class="fas fa-database"></i></div>
+                    <div>
+                        <div class="tl-title" style="font-size:1rem;">Application et Code</div>
+                        <div class="tl-sub" style="margin-top:4px;">Protection et communication entre les services</div>
+                    </div>
+                </div>
+                <p class="about-card p" style="margin-top:12px;margin-bottom:12px;font-size:13px;color:var(--muted);">
+                    Mise en place de mesures de sécurité applicatives pour protéger les échanges de données entre services et prévenir les injections et attaques CSRF.
+                </p>
+                <div class="tags">
+                    <span class="tag tag-accent">htmlspecialchars</span>
+                    <span class="tag tag-accent">Token CSRF</span>
+                    <span class="tag tag-accent">Whitelist / Blacklist</span>
+                </div>
+            </div>
+
+            <div class="about-card skill-card fade-in" style="animation-delay:0.2s">
+                <div class="skill-header">
+                    <div class="skill-icon"><i class="fas fa-network-wired"></i></div>
+                    <div>
+                        <div class="tl-title" style="font-size:1rem;">Protection et Durcissement du réseau</div>
+                        <div class="tl-sub" style="margin-top:4px;">Segmentation et sécurisation des communications</div>
+                    </div>
+                </div>
+                <p style="margin-top:12px;margin-bottom:12px;font-size:13px;color:var(--muted);">
+                    Segmentation du réseau local par virtualisation et conteneurisation pour isoler les services et sécuriser les flux entrants/sortants.
+                </p>
+                <div class="tags">
+                    <span class="tag tag-accent">VM / Docker</span>
+                    <span class="tag tag-accent">Firewall</span>
+                    <span class="tag tag-accent">Web Application Firewall</span>
+                </div>
+            </div>
+
+            <div class="about-card skill-card fade-in" style="animation-delay:0.3s">
+                <div class="skill-header">
+                    <div class="skill-icon"><i class="fas fa-shield-halved"></i></div>
+                    <div>
+                        <div class="tl-title" style="font-size:1rem;">Sécurité des données et gestion de parc</div>
+                        <div class="tl-sub" style="margin-top:4px;">Conformité RGPD et protection des données sensibles</div>
+                    </div>
+                </div>
+                <p style="margin-top:12px;margin-bottom:12px;font-size:13px;color:var(--muted);">
+                    Effacement sécurisé de supports de stockage pour garantir la conformité réglementaire lors des fins de cycle de vie du matériel.
+                </p>
+                <div class="tags">
+                    <span class="tag tag-green">KillDisk</span>
+                    <span class="tag tag-green">RGPD</span>
+                    <span class="tag">Gestion de parc</span>
+                </div>
+            </div>
+
+        </section>
+
+        <footer class="terminal-footer">
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/nicolas-gaffé-66713829b" target="_blank" aria-label="LinkedIn" title="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+            <p>&copy; 2026 Nicolas Gaffé — Tous droits réservés</p>
+        </footer>
+
+    </main>
+
+    <style>
+        .skill-card { margin-bottom: 16px; }
+        .skill-header {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+        }
+        .skill-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+            background: rgba(88,166,255,0.08);
+            border: 1px solid rgba(88,166,255,0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--accent);
+            font-size: 16px;
+            flex-shrink: 0;
+        }
+    </style>
+
+    <script>
+        const trigger = document.querySelector('.menu-trigger');
+        const mobileMenu = document.getElementById('mobileMenu');
+        trigger.addEventListener('click', (e) => {
+            e.stopPropagation();
+            mobileMenu.classList.toggle('active');
+            trigger.classList.toggle('open');
+        });
+        document.addEventListener('click', (e) => {
+            if (!mobileMenu.contains(e.target) && !trigger.contains(e.target)) {
+                mobileMenu.classList.remove('active');
+                trigger.classList.remove('open');
+            }
+        });
+        document.querySelectorAll('.fade-in').forEach((el, i) => {
+            el.style.animationDelay = `${i * 0.1}s`;
+        });
+    </script>
+</body>
+</html>

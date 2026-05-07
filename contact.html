@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Nicolas Gaffé</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="top-nav">
+        <div class="nav-logo">ng<span class="logo-dot">.</span>dev</div>
+        <button class="menu-trigger" aria-label="Ouvrir le menu">
+            <i class="fas fa-bars"></i> Menu
+        </button>
+        <ul class="nav-links">
+            <li><a href="index.html"><i class="fas fa-home"></i> Accueil</a></li>
+            <li><a href="parcours.html"><i class="fas fa-folder"></i> Parcours</a></li>
+            <li><a href="competences.html"><i class="fas fa-list-check"></i> Compétences</a></li>
+            <li><a href="epreuve.html"><i class="fas fa-graduation-cap"></i> Épreuve</a></li>
+            <li><a href="contact.html" class="active"><i class="fas fa-terminal"></i> Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="index.html"><i class="fas fa-home"></i> Accueil</a></li>
+            <li><a href="parcours.html"><i class="fas fa-folder"></i> Parcours</a></li>
+            <li><a href="competences.html"><i class="fas fa-list-check"></i> Compétences</a></li>
+            <li><a href="epreuve.html"><i class="fas fa-graduation-cap"></i> Épreuve</a></li>
+            <li><a href="contact.html"><i class="fas fa-terminal"></i> Contact</a></li>
+        </ul>
+    </div>
+
+    <main class="content">
+
+        <section class="hero-section" style="padding-bottom: 32px;">
+            <div class="hero-glow"></div>
+            <div class="hero-content">
+                <h1 class="hero-name" style="font-size:2.2rem;">Me <span class="accent">Contacter</span></h1>
+                <p class="hero-role">
+                    <span>Formulaire</span>
+                    <span class="sep">|</span>
+                    <span>Réponse rapide</span>
+                </p>
+            </div>
+        </section>
+
+        <section class="about-section" style="padding-top: 0;">
+            <div class="section-label">// messagerie</div>
+            <h2>Envoyer un message</h2>
+
+            <div class="about-card fade-in" style="animation-delay:0.1s; padding: 32px;">
+                <form action="https://formspree.io/f/xvzrbywr" method="post">
+
+                    <div class="form-group">
+                        <label for="email">Votre adresse e-mail</label>
+                        <input type="email" name="email" id="email" placeholder="email@exemple.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Votre message</label>
+                        <textarea id="message" name="message" rows="8" placeholder="Votre message ici..." required></textarea>
+                    </div>
+
+                    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-top:8px;">
+                        <a href="index.html" style="color:var(--muted); text-decoration:none; font-size:13px; transition:color .2s;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--muted)'">
+                            <i class="fas fa-arrow-left" style="margin-right:6px;"></i>Retour à l'accueil
+                        </a>
+                        <button type="submit" class="btn-submit" style="padding:12px 28px;">
+                            <i class="fas fa-paper-plane" style="margin-right:8px;"></i>Envoyer
+                        </button>
+                    </div>
+
+                </form>
+            </div>
+
+            <!-- Lien LinkedIn en dessous -->
+            <div class="about-card fade-in" style="animation-delay:0.2s; margin-top:16px; display:flex; align-items:center; gap:16px; padding:20px 24px;">
+                <div style="width:42px;height:42px;border-radius:8px;background:rgba(88,166,255,0.08);border:1px solid rgba(88,166,255,0.2);display:flex;align-items:center;justify-content:center;color:var(--accent);font-size:18px;flex-shrink:0;">
+                    <i class="fab fa-linkedin"></i>
+                </div>
+                <div style="flex:1;">
+                    <div class="tl-title">LinkedIn</div>
+                    <div class="tl-sub" style="margin-top:3px;">Retrouvez mon profil professionnel</div>
+                </div>
+                <a href="https://www.linkedin.com/in/nicolas-gaffé-66713829b" target="_blank" class="btn-doc">
+                    Voir le profil <i class="fas fa-arrow-right" style="margin-left:4px;"></i>
+                </a>
+            </div>
+        </section>
+
+        <footer class="terminal-footer">
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/nicolas-gaffé-66713829b" target="_blank" aria-label="LinkedIn" title="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+            <p>&copy; 2026 Nicolas Gaffé — Tous droits réservés</p>
+        </footer>
+
+    </main>
+
+    <style>
+        .btn-doc {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: transparent;
+            color: var(--accent);
+            border: 1px solid var(--accent);
+            padding: 7px 14px;
+            border-radius: 6px;
+            font-family: monospace;
+            font-size: 12px;
+            font-weight: bold;
+            text-decoration: none;
+            white-space: nowrap;
+            flex-shrink: 0;
+            transition: var(--transition);
+        }
+        .btn-doc:hover {
+            background: var(--accent);
+            color: var(--bg-dark);
+        }
+        /* Override project-card margin for about-card reuse */
+        .about-section .about-card {
+            width: 100%;
+            max-width: 100%;
+            margin: 0 0 0 0;
+        }
+    </style>
+
+    <script>
+        const trigger = document.querySelector('.menu-trigger');
+        const mobileMenu = document.getElementById('mobileMenu');
+        trigger.addEventListener('click', (e) => {
+            e.stopPropagation();
+            mobileMenu.classList.toggle('active');
+            trigger.classList.toggle('open');
+        });
+        document.addEventListener('click', (e) => {
+            if (!mobileMenu.contains(e.target) && !trigger.contains(e.target)) {
+                mobileMenu.classList.remove('active');
+                trigger.classList.remove('open');
+            }
+        });
+        document.querySelectorAll('.fade-in').forEach((el, i) => {
+            el.style.animationDelay = `${i * 0.1}s`;
+        });
+    </script>
+</body>
+</html>
